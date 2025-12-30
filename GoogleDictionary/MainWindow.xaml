@@ -1,0 +1,9 @@
+﻿<Window x:Class="GoogleDictionary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="Google Dictionary Desktop" Height="700" Width="500">
+    <Grid>
+        <wv2:WebView2 Name="webView" Source="about:blank" />
+    </Grid>
+</Window>
