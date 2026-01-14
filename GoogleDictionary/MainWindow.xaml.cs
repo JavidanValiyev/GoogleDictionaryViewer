@@ -72,8 +72,8 @@ public partial class MainWindow : Window
             </head>
             <body>
                 <div class='search-container'>
-                    <input type='text' id='wordInput' placeholder='Kelime yazın...' onkeydown=""if(event.key === 'Enter') sendToCSharp()"">
-                    <button onclick='sendToCSharp()'>Ara</button>
+                    <input type='text' id='wordInput' placeholder='Type word...' onkeydown=""if(event.key === 'Enter') sendToCSharp()"">
+                    <button onclick='sendToCSharp()'>Search</button>
                 </div>
                 <div id='results'></div>
 
@@ -83,7 +83,7 @@ public partial class MainWindow : Window
                         const word = document.getElementById('wordInput').value.trim();
                         if (!word) return;
                         
-                        document.getElementById('results').innerHTML = 'Aranıyor...';
+                        document.getElementById('results').innerHTML = 'Searching...';
                         
                         // WebView2 üzerinden C#'a mesaj yolla
                         window.chrome.webview.postMessage(word);
